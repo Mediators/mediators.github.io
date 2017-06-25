@@ -221,6 +221,7 @@ A nicely formatted PDF version is available from: <a href="https://mediators.git
 <li>The Voodoo 4 driver has a bug which prevents 15bit and 16bit BE screenmodes from working correctly if an app/game requires a different Endian addressing setup - this manifests as games running with the wrong colours.</li>
 <li>Voodoo cards can be overclocked via tooltypes on the monitor file in <code>DEVS:Monitors</code> Set <code>Overclock=Yes</code>  and <code>MemoryClock=$MHz</code> you would like to run  Example: <code>MemoryClock=167</code> Voodoo 3-3000 speed</li>
 <li>Radeon cards only operate in LE mode so applications which expect BE mode will display incorrect colors</li>
+<li>To display BE and LE modes in screenmode requesters open PVS in Sys:Prefs and under Show Modes select "All" </li>
 </ul>
 <h4 id="sound-card">3.1.3 Sound card</h4>
 <p>Assuming you ran the Elbox installer, it will have installed <code>AHI</code>, the Amiga's retargetable audio framework, several drivers, and a Mixer application. The Elbox installer appears to install a strange mixture of different versions of AHI, but only two files are specific to the hardware, so you can start with a stock install of AHI and add in the <code>.card</code> and audiomode files from Elbox, that apply to your soundcard (so either <code>sb128</code> or <code>fm801</code>). Some users seem to find that AHI 5.6 is more stable than AHI 6.0.</p>
